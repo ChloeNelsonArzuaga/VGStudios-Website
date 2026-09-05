@@ -258,28 +258,6 @@ a {
   padding: 32px 6%;
 }
 
-.work-number {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 20px;
-}
-
-.work-number span {
-  font-family: var(--sans);
-  font-size: 0.85rem;
-  letter-spacing: 0.18em;
-  color: var(--red);
-}
-
-.work-number i {
-  display: block;
-  width: 42px;
-  height: 1px;
-  background: var(--ink-soft);
-  font-style: normal;
-}
-
 .work-text h2 {
   font-family: var(--serif);
   font-weight: 400;
