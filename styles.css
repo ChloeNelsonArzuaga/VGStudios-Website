@@ -53,7 +53,7 @@ a {
 }
 
 .logo-horizontal {
-  height: 38px;
+  height: 56px;
   width: auto;
 }
 
@@ -98,7 +98,7 @@ a {
 
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: clamp(400px, 56vh, 600px);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -127,23 +127,23 @@ a {
 }
 
 .hero-logo {
-  width: 200px;
-  margin-bottom: 26px;
+  width: 180px;
+  margin-bottom: 18px;
 }
 
 .hero-divider {
   width: 64px;
   height: 2px;
   background: var(--red);
-  margin: 0 0 30px;
+  margin: 0 0 22px;
 }
 
 .hero-content h1 {
   font-family: var(--serif);
   font-weight: 600;
-  font-size: clamp(2.1rem, 4vw, 3.4rem);
+  font-size: clamp(1.9rem, 3.4vw, 3rem);
   line-height: 1.18;
-  margin: 0 0 38px;
+  margin: 0 0 28px;
 }
 
 .cta-button {
@@ -220,7 +220,7 @@ a {
 .work-card {
   position: relative;
   overflow: hidden;
-  min-height: 460px;
+  min-height: 300px;
 }
 
 .work-image {
@@ -251,7 +251,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 48px 6%;
+  padding: 32px 6%;
 }
 
 .work-number {
@@ -341,7 +341,7 @@ a {
   }
 
   .work-card {
-    min-height: 420px;
+    min-height: 380px;
   }
 
   .work-text {
@@ -379,6 +379,10 @@ a {
   .site-nav a {
     padding: 16px 24px;
     border-top: 1px solid rgba(28, 26, 24, 0.06);
+  }
+
+  .hero {
+    min-height: 100vh;
   }
 
   .hero-content {
