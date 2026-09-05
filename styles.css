@@ -225,11 +225,12 @@ a {
 
 .work-image {
   position: absolute;
-  inset: 0;
+  top: 0;
   left: 34%;
-  width: auto;
+  width: 66%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: right center;
 }
 
 .work-fade {
