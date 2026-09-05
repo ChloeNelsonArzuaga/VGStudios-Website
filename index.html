@@ -3,9 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VGStudios</title>
+  <title>VG Studios | Vestige / Glimpse</title>
+  <link rel="icon" href="Assets/dark-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Hello World</h1>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo-link">
+        <img src="Assets/dark-logo.png" alt="VG Studios" class="logo-horizontal">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav">
+        <a href="#work">Work</a>
+        <a href="#approach">Approach</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" style="background-image: url('Assets/hero-image.png');">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <img src="Assets/light-logo.png" alt="VG Studios — Vestige / Glimpse" class="hero-logo">
+      <div class="hero-divider"></div>
+      <h1>Reconstructing the<br>experience of place.</h1>
+      <a href="#work" class="cta-button">Explore the work. <span class="arrow">&rarr;</span></a>
+    </div>
+    <a href="#work" class="scroll-indicator">
+      <span>Scroll</span>
+      <span class="scroll-line"></span>
+    </a>
+  </section>
+
+  <section class="work" id="work">
+    <article class="work-card">
+      <img src="Assets/vestige.png" alt="Vestige — historical ruins reconstruction" class="work-image">
+      <div class="work-fade"></div>
+      <div class="work-text">
+        <div class="work-number"><span>01</span><i></i></div>
+        <h2>Vestige</h2>
+        <p>Historical reconstruction.<br>Immersive experiences.</p>
+        <a href="#" class="work-arrow" aria-label="Learn more about Vestige">&rarr;</a>
+      </div>
+    </article>
+
+    <article class="work-card">
+      <img src="Assets/glimpse.png" alt="Glimpse — renovation and new construction" class="work-image">
+      <div class="work-fade"></div>
+      <div class="work-text">
+        <div class="work-number"><span>02</span><i></i></div>
+        <h2>Glimpse</h2>
+        <p>Renovation, restoration,<br>and new construction.</p>
+        <a href="#" class="work-arrow" aria-label="Learn more about Glimpse">&rarr;</a>
+      </div>
+    </article>
+  </section>
+
+  <footer class="site-footer" id="contact">
+    <img src="Assets/light-logo.png" alt="VG Studios" class="footer-logo">
+    <p>&copy; <span id="year"></span> VG Studios. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
